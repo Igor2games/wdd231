@@ -7,6 +7,8 @@
 
     header {
         grid-template-columns: 24px auto;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
     }
 
     .hamburger {
@@ -15,9 +17,14 @@
 
     .navigation{
         display: block;
+        
     }
 
     .navigation ul {
         display: flex;
+    }
+
+    .navigation a {
+        border: none;
     }
 }
