@@ -115,6 +115,23 @@ h2 {
     border: 3px solid var(--primary-color);
 }
 
+/****************** COURSES ******************/
+
+.course-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 10px;
+    text-align: center;
+    column-gap: 10px;
+}
+
+.course-grid h3 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
 /****************** FOOTER ******************/
 
 footer {

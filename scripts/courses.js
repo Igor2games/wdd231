@@ -83,14 +83,14 @@ createCourseCard(courses);
 function createCourseCard(courses) {
     document.querySelector(".course-grid").innerHTML = "";
     courses.forEach(course => {
-        let name = document.createElement("p");
+        const card = document.createElement("div");
+        card.className = "course-card";
 
-        name.textContent = course.subject;
-        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-        p.setAttribute;
+        const title = document.createElement("h3");
+        title.textContent = `${course.subject} ${course.number}`;
+        card.appendChild(title);
 
-        card.appendChild(name);
-        
+
         document.querySelector(".course-grid").appendChild(card)
     })
 }
