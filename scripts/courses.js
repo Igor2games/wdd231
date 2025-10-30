@@ -90,6 +90,11 @@ function createCourseCard(courses) {
         title.textContent = `${course.subject} ${course.number}`;
         card.appendChild(title);
 
+        if (course.completed == true){
+            title.style.backgroundColor = '#f39c05';
+            title.style.color = '#000000ff';
+            title.textContent = `✓ ${course.subject} ${course.number}`;
+        }
 
         document.querySelector(".course-grid").appendChild(card)
     })
