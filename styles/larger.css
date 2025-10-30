@@ -34,4 +34,13 @@
     .navigation li.current {
         border-radius: 22px;
     }
+
+    .large-about {
+        display: grid;
+        grid-template-columns: auto 300px;
+    }
+
+    .about p {
+        height: 210px;
+    }
 }
