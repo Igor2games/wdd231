@@ -118,8 +118,6 @@ h2 {
 /****************** COURSES ******************/
 
 .course-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
     margin: 10px;
     text-align: center;
     column-gap: 10px;

@@ -43,4 +43,9 @@
     .about p {
         height: 210px;
     }
+
+    .course-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
