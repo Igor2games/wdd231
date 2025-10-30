@@ -99,7 +99,7 @@ h2 {
     text-align: center;
 }
 
-.about p {
+.about p, .student-photo div {
     background-color: rgb(217, 212, 212);
     margin: 10px;
     padding: 10px;
@@ -109,13 +109,12 @@ h2 {
 
 .student-photo {
     text-align: center;
-    background-color: rgb(217, 212, 212);
-    margin: 0;
 }
 
 .student-photo img {
     border: 3px solid var(--primary-color);
 }
+
 /****************** FOOTER ******************/
 
 footer {
