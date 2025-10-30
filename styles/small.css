@@ -1,3 +1,14 @@
+:root {
+    --primary-color: rgb(1, 48, 90);
+    --secondary-color: rgb(41, 56, 70);
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
 /****************** HEADER ****************************/
 header {
     display: grid;
@@ -6,6 +17,8 @@ header {
     align-items: end;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
+    background-color: var(--primary-color);
+    color: white;
 }
 
 header img {
@@ -26,9 +39,10 @@ header span {
 /****************** HAMBURGER ******************/
 .hamburger {
     border: none;
-    background-color: white;
+    background-color: var(--primary-color);
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
 .hamburger::before {
@@ -38,4 +52,28 @@ header span {
 
 .hamburger.show::before {
     content: "\00D7";
+}
+
+/****************** NAVIGATION ******************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--secondary-color);
 }
