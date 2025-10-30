@@ -16,15 +16,22 @@
     }
 
     .navigation{
-        display: block;
-        
+        display: flex;
+        margin-top: 5px;
     }
 
     .navigation ul {
         display: flex;
+        column-gap: 8px;
     }
 
     .navigation a {
         border: none;
+        border: solid 2px var(--primary-color);
+        border-radius: 22px;
+    }
+
+    .navigation li.current {
+        border-radius: 22px;
     }
 }
