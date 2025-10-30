@@ -90,11 +90,7 @@ function createCourseCard(courses) {
         p.setAttribute;
 
         card.appendChild(name);
-        card.appendChild(location);
-        card.appendChild(dedication);
-        card.appendChild(area);
-        card.appendChild(img);
-
-        document.querySelector(".imgGrid").appendChild(card)
+        
+        document.querySelector(".course-grid").appendChild(card)
     })
 }
