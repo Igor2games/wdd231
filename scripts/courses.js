@@ -78,15 +78,15 @@ const courses = [
     }
 ]
 
+createCourseCard(courses);
+
 function createCourseCard(courses) {
     document.querySelector(".course-grid").innerHTML = "";
     courses.forEach(course => {
-        let name = document.createElement("section");
+        let name = document.createElement("p");
 
         name.textContent = course.subject;
         location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
-        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-        area.innerHTML = `<span class="label">Size:</span> ${temple.area}`;
         p.setAttribute;
 
         card.appendChild(name);
