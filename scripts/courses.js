@@ -96,6 +96,10 @@ function createCourseCard(courses) {
             title.textContent = `✓ ${course.subject} ${course.number}`;
         }
 
+        const credits = document.createElement("p")
+        credit = course.credits;
+        const total = credit
+
         document.querySelector(".course-grid").appendChild(card)
     })
 }
