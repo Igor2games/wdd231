@@ -156,7 +156,7 @@ h2 {
     padding: 0;
     column-gap: 10px;
     list-style: none;
-    margin: 30px 10px 15px 10px;
+    margin: 15px 10px 15px 10px;
     justify-content: center;
     max-width: calc(100% - 20px);
 }
@@ -179,6 +179,10 @@ h2 {
 .course-list A:hover {
     background-color: #f39c05;
     color: black;
+}
+
+.credits {
+    margin: 10px;
 }
 
 /****************** FOOTER ******************/
