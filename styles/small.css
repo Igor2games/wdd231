@@ -162,7 +162,7 @@ h2 {
     list-style: none;
     margin: 15px 10px 15px 10px;
     justify-content: center;
-    max-width: calc(100% - 20px);
+    max-width: calc(100% - 10px);
 }
 
 .course-list li{
