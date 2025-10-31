@@ -134,6 +134,36 @@ h2 {
     text-align: center;
 }
 
+.course-list{
+    display: flex;
+    padding: 0;
+    column-gap: 10px;
+    list-style: none;
+    margin: 30px 10px 15px 10px;
+    justify-content: center;
+    max-width: calc(100% - 20px);
+}
+
+.course-list li{
+    flex: 1 0 0;
+    min-width: 0;
+}
+
+.course-list a{
+    display: block;
+    background-color: rgb(48, 76, 102);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.course-list A:hover {
+    background-color: #f39c05;
+    color: black;
+}
+
 /****************** FOOTER ******************/
 
 footer {
