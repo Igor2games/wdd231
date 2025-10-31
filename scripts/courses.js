@@ -79,6 +79,7 @@ const courses = [
 ]
 
 createCourseCard(courses);
+CreateCourseCredits(courses);
 
 function createCourseCard(courses) {
     document.querySelector(".course-grid").innerHTML = "";
@@ -96,10 +97,27 @@ function createCourseCard(courses) {
             title.textContent = `✓ ${course.subject} ${course.number}`;
         }
 
-        const credits = document.createElement("p")
-        credit = course.credits;
-        const total = credit
-
         document.querySelector(".course-grid").appendChild(card)
     })
+}
+
+function CreateCourseCredits(courses) {
+    const container = document.querySelector(".credits");
+    container.innerHTML ="";
+
+    let creditTotal = 0;
+    courses.forEach(course => {
+        if (course) {
+        creditTotal += course.credits;
+        }       
+    });
+
+        const card = document.createElement("div");
+        card.className = "credit-card";
+
+        const creditCard = document.createElement("div");
+        creditCard.textContent = `The total credits for courses listed above is ${creditTotal}`;
+        card.appendChild(creditCard);
+       
+        container.appendChild(card)
 }
