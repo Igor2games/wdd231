@@ -115,24 +115,28 @@ wddLink.addEventListener("click", () => {
 
 
 function createCourseCard(courses) {
-    document.querySelector(".course-grid").innerHTML = "";
+    const grid = document.querySelector(".course-grid");
+    grid.innerHTML = "";
+
     courses.forEach(course => {
         const card = document.createElement("div");
         card.className = "course-card";
 
         const title = document.createElement("h3");
-        title.textContent = `${course.subject} ${course.number}`;
+        title.className = "title";
+        title.textContent = `✓ ${course.subject} ${course.number}`; // always include leading glyph
         card.appendChild(title);
 
-        if (course.completed == true){
-            title.style.backgroundColor = '#f39c05';
-            title.style.color = '#000000ff';
-            title.textContent = `✓ ${course.subject} ${course.number}`;
+        if (course.completed) {
+            card.classList.add("completed");
+        } else {
+            card.classList.remove("completed");
         }
 
-        document.querySelector(".course-grid").appendChild(card)
-    })
+        grid.appendChild(card);
+    });
 }
+
 
 function CreateCourseCredits(courses) {
     const container = document.querySelector(".credits");
