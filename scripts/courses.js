@@ -78,8 +78,41 @@ const courses = [
     }
 ]
 
+document.querySelectorAll('a.prevent').forEach(a =>
+    a.addEventListener('click', e => e.preventDefault())
+);
+
+
 createCourseCard(courses);
 CreateCourseCredits(courses);
+
+const allLink = document.querySelector("#all");
+const cseLink = document.querySelector("#cse");
+const wddLink = document.querySelector("#wdd");
+
+allLink.addEventListener("click", () => {
+    createCourseCard(courses);
+    CreateCourseCredits(courses)
+})
+
+cseLink.addEventListener("click", () => {
+    const cseCourses = courses.filter(t => {
+        return t.subject == "CSE"
+    })
+
+    createCourseCard(cseCourses);
+    CreateCourseCredits(cseCourses);
+})
+
+wddLink.addEventListener("click", () => {
+    const cseCourses = courses.filter(t => {
+        return t.subject == "WDD"
+    })
+
+    createCourseCard(cseCourses);
+    CreateCourseCredits(cseCourses);
+})
+
 
 function createCourseCard(courses) {
     document.querySelector(".course-grid").innerHTML = "";
