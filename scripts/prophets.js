@@ -37,5 +37,4 @@ const displayProphets = (prophets) => {
         cards.appendChild(card);
     });
 }
-
 getProphetData(url);
