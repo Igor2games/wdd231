@@ -192,7 +192,7 @@ footer {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .social {

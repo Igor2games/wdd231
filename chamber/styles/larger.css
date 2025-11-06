@@ -46,4 +46,25 @@
     .navigation li.current {
         border-radius: 22px;
     }
+
+    footer {
+        display: flex;
+        gap: 100px;
+    }
+
+    .social img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .social a {
+        width: 56px;
+        height: 56px;
+        border-radius: 44px;
+        margin-top: 40px;
+    }
+
+    .list section {
+        gap: 120px;
+    }
 }
