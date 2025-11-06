@@ -1,6 +1,6 @@
 @media only screen and (min-width: 38rem) {
     
-    header, main, nav, footer {
+    header, main, nav, footer, .large-header {
         max-width: 900px;
         margin: 0 auto;
     }
@@ -13,6 +13,12 @@
 
     .hamburger {
         display: none;
+    }
+
+    .large-header {
+        display: flex;
+        background-color: var(--primary-color);
+        padding-bottom: 5px;
     }
 
     .navigation{
@@ -29,6 +35,12 @@
         border: none;
         border: solid 2px var(--primary-color);
         border-radius: 22px;
+        
+    }
+
+    .navigation li {
+        background-color: white;
+        border-radius: 26px;
     }
 
     .navigation li.current {
