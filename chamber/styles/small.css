@@ -120,6 +120,10 @@ main {
     align-items: stretch;
 }
 
+.grid p {
+    padding: 5px 0 5px 0;
+}
+
 section {
     text-align: center;
     border: 1px solid rgb(0 0 0 / 10%);

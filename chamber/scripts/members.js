@@ -14,6 +14,8 @@ const displayMembers = (members) => {
         let name = document.createElement('h2');
         let image = document.createElement('img');
         let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let level = document.createElement('p');
         
         name.textContent = member.name;
 
@@ -21,12 +23,18 @@ const displayMembers = (members) => {
         image.setAttribute('alt', `image of ${member.name}`);
         image.setAttribute('loading', 'lazy');
 
-        address.textContent = member.address;
+        address.textContent = `Address: ${member.address}`;
+
+        phone.textContent = `Phone: ${member.phone}`;
+
+        level.textContent = `Membership level: ${member.membership_level}`;
+
         card.appendChild(image);
         card.appendChild(name);
-
-       
+        
         card.appendChild(address)
+        card.appendChild(phone);
+        card.appendChild(level);
 
         cards.appendChild(card);
     });
