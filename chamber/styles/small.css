@@ -91,7 +91,34 @@ header span {
 
 /****************** COMPANIES ******************/
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
 
+.grid img{
+    width: 250px;
+    height: 200px;
+    border: 3px solid black;
+    box-shadow: 0 0 1rem #555;
+}
+
+section {
+    text-align: center;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+
+     &>* {
+    	 margin: 0.3rem;
+    }
+}
 
 /****************** FOOTER ******************/
 
