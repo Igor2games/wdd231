@@ -97,6 +97,24 @@ main {
     margin: 0 auto;
     padding: 0.5rem
 }
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 5px 15px 5px;
+
+    button {
+        border-radius: 22px;
+        width: 64px;
+        height: 32px;
+    }
+
+    button:hover {
+        background-color: #f39c05;
+    }
+}
+
 /****************** COMPANIES ******************/
 
 .grid {
