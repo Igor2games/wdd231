@@ -12,18 +12,17 @@ const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement('section');
         let name = document.createElement('h2');
+        let image = document.createElement('img');
         
         name.textContent = member.name;
 
-        //portrait.setAttribute('src', prophet.imageurl);
-       // portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
-        //portrait.setAttribute('loading', 'lazy');
-       // portrait.setAttribute('width', '340');
-        //portrait.setAttribute('height', '440');
-
-
-        card.appendChild(name);
+        image.setAttribute('src', member.image);
+        image.setAttribute('alt', `image of ${member.name}`);
+        image.setAttribute('loading', 'lazy');
         
+        card.appendChild(name);
+        card.appendChild(image);
+
         cards.appendChild(card);
     });
 }
