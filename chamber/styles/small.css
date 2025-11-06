@@ -3,6 +3,10 @@
     --secondary-color: rgb(41, 56, 70);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 
 body {
     font-family: "Roboto", sans-serif;
@@ -88,25 +92,32 @@ header span {
 
 /****************** MAIN ******************/
 
-
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0.5rem
+}
 /****************** COMPANIES ******************/
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 5px;
     align-items: center;
     text-align: center;
     color: white;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin: 30px 10px 30px 10px;
 }
 
 .grid img{
-    width: 250px;
-    height: 200px;
+    width: 150px;
+    height: 100px;
     border: 3px solid black;
     box-shadow: 0 0 1rem #555;
+}
+
+.grid {
+    align-items: stretch;
 }
 
 section {

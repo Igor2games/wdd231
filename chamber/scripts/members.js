@@ -13,15 +13,20 @@ const displayMembers = (members) => {
         let card = document.createElement('section');
         let name = document.createElement('h2');
         let image = document.createElement('img');
+        let address = document.createElement('p');
         
         name.textContent = member.name;
 
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `image of ${member.name}`);
         image.setAttribute('loading', 'lazy');
-        
-        card.appendChild(name);
+
+        address.textContent = member.address;
         card.appendChild(image);
+        card.appendChild(name);
+
+       
+        card.appendChild(address)
 
         cards.appendChild(card);
     });
