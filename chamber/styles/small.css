@@ -118,20 +118,53 @@ main {
 
 .grid {
     align-items: stretch;
+    section {
+            text-align: center;
+            border: 1px solid rgb(0 0 0 / 10%);
+            padding: 0.5rem;
+            background-color: var(--secondary-color);
+        }
 }
 
 .grid p {
     padding: 5px 0 5px 0;
 }
 
-section {
-    text-align: center;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 0.5rem;
+.list {
+    display: flex;
+    flex-direction: column;
+    color: white;
     background-color: var(--secondary-color);
 
-     &>* {
-    	 margin: 0.3rem;
+    section {
+        display: grid;
+        grid-template-columns: 100PX 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+
+        &>* {
+            margin: 0 1rem;
+        }
+
+        img {
+            display: none;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        &:nth-child(even) {
+            background-color: rgb(59, 81, 101);
+        }
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+    
+    .address {
+        display: none;
     }
 }
 
