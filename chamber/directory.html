@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <title>Directory</title>
+    <meta name="description" content="WDD231 | Web Frontend Development I | Chamber Directory Page">
+    <meta name="author" content="Pedro Igor Andrade Neres">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Chamber Directory Page">
+    <meta property="og:description" content="The Chamber Directory Page for the WDD 231 Course.">
+    <meta property="og:image" content="images/house-logo.svg">
+    <meta property="og:url" content="https://igor2games.github.io/wdd231/index.html">
+</head>
+
+<body>
+    <header>
+        <img src="images/house-logo.svg" alt="House Logo" width="500" height="500">
+        <span>Pedro Igor Andrade Neres</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <section class="cards"></section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin logo"
+                    width="16" height="16"></a>
+            <a href="https://github.com/Igor2games" target="_blank"><img src="images/github.svg" alt="github logo"
+                    width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter X" width="16"
+                    height="16"></a>
+        </div>
+        <p> &copy; <span id="currentyear"></span> Pedro Igor Andrade Neres, Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
