@@ -11,11 +11,14 @@ async function getMemberData(src) {
 const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement('section');
+        let name = document.createElement('h2');
         let image = document.createElement('img');
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let url = document.createElement('a');
         
+        name.textContent = member.name
+
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `image of ${member.name}`);
         image.setAttribute('loading', 'lazy');
@@ -29,6 +32,7 @@ const displayMembers = (members) => {
         const href = member.website && String(member.website).trim();
         url.href = (/^https?:\/\//i.test(href) ? href : `https://${href}`);
 
+        card.appendChild(name);
         card.appendChild(image);
         card.appendChild(address)
         card.appendChild(phone);

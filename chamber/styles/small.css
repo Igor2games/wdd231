@@ -159,8 +159,12 @@ main {
     max-width: 100%;
 }
 
-.grid a:hover {
+.grid a:hover, .list a:hover {
     text-decoration: underline;
+}
+
+.grid h2 {
+    display: none;
 }
 
 .list {
@@ -171,13 +175,9 @@ main {
 
     section {
         display: grid;
-        grid-template-columns: 100PX 1fr 1fr;
-        margin: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
         padding: 0.25rem;
-
-        &>* {
-            margin: 0 1rem;
-        }
 
         img {
             display: none;
@@ -185,6 +185,14 @@ main {
 
         h3 {
             font-size: 1rem;
+        }
+
+        p {
+            white-space: nowrap;
+        }
+
+        .address {
+            white-space: wrap;
         }
 
         &:nth-child(even) {
@@ -196,9 +204,6 @@ main {
         font-size: 1rem;
     }
     
-    .address {
-        display: none;
-    }
 }
 
 /****************** FOOTER ******************/
