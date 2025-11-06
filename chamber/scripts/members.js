@@ -11,31 +11,28 @@ async function getMemberData(src) {
 const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement('section');
-        let name = document.createElement('h2');
         let image = document.createElement('img');
         let address = document.createElement('p');
         let phone = document.createElement('p');
-        let level = document.createElement('p');
+        let url = document.createElement('a');
         
-        name.textContent = member.name;
-
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `image of ${member.name}`);
         image.setAttribute('loading', 'lazy');
 
-        address.textContent = `Address: ${member.address}`;
+        address.textContent = member.address;
         address.setAttribute('class', 'address');
 
-        phone.textContent = `Phone: ${member.phone}`;
+        phone.textContent = member.phone;
 
-        level.textContent = `Membership level: ${member.membership_level}`;
+        url.textContent = member.website;
+        const href = member.website && String(member.website).trim();
+        url.href = (/^https?:\/\//i.test(href) ? href : `https://${href}`);
 
         card.appendChild(image);
-        card.appendChild(name);
-        
         card.appendChild(address)
         card.appendChild(phone);
-        card.appendChild(level);
+        card.appendChild(url);
 
         cards.appendChild(card);
     });

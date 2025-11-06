@@ -2,7 +2,7 @@
     "members": [
     {
         "name": "Campos Energia S.A.",
-        "address": "Av. Pelinca, 1420, Jardim Carioca, Campos dos Goytacazes, RJ, 28015-250",
+        "address": "Av. Pelinca, 1420, Jardim Carioca",
         "phone": "+55 22 2732-4400",
         "website": "https://www.camposenergia.com.br",
         "image": "images/campos_energia.webp",
@@ -15,7 +15,7 @@
     },
     {
         "name": "Pelinca Tecnologia Ltda.",
-        "address": "Rua Tenente Coronel Cardoso, 85, Pelinca, Campos dos Goytacazes, RJ, 28015-320",
+        "address": "Rua Tenente Coronel Cardoso, 85, Pelinca",
         "phone": "+55 22 2733-1105",
         "website": "https://www.pelincatech.com.br",
         "image": "images/pelinca_tech.webp",
@@ -28,7 +28,7 @@
     },
     {
         "name": "Mercado São Benedito",
-        "address": "Av. Alberto Lamego, 221, Centro, Campos dos Goytacazes, RJ, 28020-000",
+        "address": "Av. Alberto Lamego, 221, Centro",
         "phone": "+55 22 2732-9020",
         "website": "https://www.mercadosbenedito.com.br",
         "image": "images/mercado_sao_benedito.webp",
@@ -41,7 +41,7 @@
     },
     {
         "name": "Hotel Vitória Campos",
-        "address": "Av. 28 de Março, 480, Parque Tamandaré, Campos dos Goytacazes, RJ, 28013-160",
+        "address": "Av. 28 de Março, 480, Parque Tamandaré",
         "phone": "+55 22 2734-5500",
         "website": "https://www.vitoriacampos.com.br",
         "image": "images/hotel_vitoria.webp",
@@ -54,7 +54,7 @@
     },
     {
         "name": "Clínica Santa Clara",
-        "address": "Rua Fernandes Pinheiro, 310, Centro, Campos dos Goytacazes, RJ, 28020-120",
+        "address": "Rua Fernandes Pinheiro, 310, Centro",
         "phone": "+55 22 2733-7788",
         "website": "https://www.clinicasantaclara.com.br",
         "image": "images/clinica_santa_clara.webp",
@@ -67,7 +67,7 @@
     },
     {
         "name": "Transportes Líder Campos",
-        "address": "Rod. BR-101, Km 45, Distrito de Guarus, Campos dos Goytacazes, RJ, 28080-000",
+        "address": "Rod. BR-101, Km 45, Distrito de Guarus",
         "phone": "+55 22 2734-6606",
         "website": "https://www.transporteslider.com.br",
         "image": "images/transporte_lider.webp",
@@ -80,7 +80,7 @@
     },
     {
         "name": "Padaria do Mercado",
-        "address": "Rua Barão de Miracema, 98, Centro, Campos dos Goytacazes, RJ, 28020-060",
+        "address": "Rua Barão de Miracema, 98, Centro",
         "phone": "+55 22 2732-1188",
         "website": "http://www.padariado mercado.com.br",
         "image": "images/padaria_do_mercado.webp",
@@ -93,7 +93,7 @@
     },
     {
         "name": "Agro Campos Cooperativa",
-        "address": "Estr. do Caju, s/n, Bela Vista, Campos dos Goytacazes, RJ, 28060-500",
+        "address": "Estr. do Caju, s/n, Bela Vista",
         "phone": "+55 22 2735-9001",
         "website": "https://www.agrocamposcoop.com.br",
         "image": "images/agro_campos.webp",
