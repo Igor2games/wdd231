@@ -148,7 +148,6 @@ main {
     color: white;
     white-space: normal;
     overflow-wrap: anywhere;
-    word-break: break-word;
     display: inline-block;
     max-width: 100%;
 }
