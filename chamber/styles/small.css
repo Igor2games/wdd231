@@ -175,7 +175,7 @@ main {
 
     section {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 70px 1fr 1fr 1fr;
         gap: 5px;
         padding: 0.25rem;
 
@@ -186,17 +186,12 @@ main {
         h3 {
             font-size: 1rem;
         }
-
-        p {
-            white-space: nowrap;
-        }
-
-        .address {
-            white-space: wrap;
-        }
-
         &:nth-child(even) {
             background-color: rgb(59, 81, 101);
+        }
+
+        p, h2, a {
+            font-size: 12px;
         }
     }
 
