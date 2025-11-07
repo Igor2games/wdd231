@@ -34,9 +34,6 @@ header img {
 
 header span {
     font-size: 1.2rem;
-}
-
-header span {
     padding-bottom: 3px;
 }
 
@@ -121,10 +118,10 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 5px;
-    align-items: center;
     text-align: center;
     color: white;
     margin: 30px 10px 30px 10px;
+    align-items: stretch;
 }
 
 .grid img{
@@ -133,10 +130,6 @@ main {
     border: 3px solid black;
     box-shadow: 0 0 1rem #555;
     background-color: white;
-}
-
-.grid {
-    align-items: stretch;
 }
 
 .grid section {
