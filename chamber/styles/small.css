@@ -95,7 +95,7 @@ header span {
 main {
     max-width: 700px;
     margin: 0 auto;
-    padding: 0.5rem
+    padding: 0.5rem;
 }
 
 .menu {
@@ -103,17 +103,17 @@ main {
     justify-content: center;
     gap: 15px;
     margin: 15px 5px 15px 5px;
-
-    button {
-        border-radius: 22px;
-        width: 64px;
-        height: 32px;
-    }
-
-    button:hover {
-        background-color: #f39c05;
-    }
 }
+
+ .menu button {
+     border-radius: 22px;
+     width: 64px;
+     height: 32px;
+ }
+
+ .menu button:hover {
+     background-color: #f39c05;
+ }
 
 /****************** COMPANIES ******************/
 
@@ -137,13 +137,14 @@ main {
 
 .grid {
     align-items: stretch;
-    section {
-            text-align: center;
-            border: 1px solid rgb(0 0 0 / 10%);
-            padding: 0.5rem;
-            background-color: var(--secondary-color);
-        }
 }
+
+.grid section {
+     text-align: center;
+     border: 1px solid rgb(0 0 0 / 10%);
+     padding: 0.5rem;
+     background-color: var(--secondary-color);
+ }
 
 .grid p {
     padding: 5px 0 5px 0;
@@ -172,33 +173,36 @@ main {
     flex-direction: column;
     color: white;
     background-color: var(--secondary-color);
-
-    section {
-        display: grid;
-        grid-template-columns: 70px 1fr 1fr 1fr;
-        gap: 5px;
-        padding: 0.25rem;
-
-        img {
-            display: none;
-        }
-
-        h3 {
-            font-size: 1rem;
-        }
-        &:nth-child(even) {
-            background-color: rgb(59, 81, 101);
-        }
-
-        p, h2, a {
-            font-size: 12px;
-        }
     }
+    
 
     h2 {
         font-size: 1rem;
     }
-    
+
+.list section {
+    display: grid;
+    grid-template-columns: 70px 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 0.25rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+    background-color: rgb(59, 81, 101);
+}
+
+.list section p,
+.list section h2,
+.list section a {
+    font-size: 12px;
 }
 
 /****************** FOOTER ******************/
