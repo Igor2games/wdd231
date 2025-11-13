@@ -243,3 +243,26 @@ footer p {
     color: white;
     text-decoration: none;
 }
+
+/****************** HOME PAGE******************/
+
+.home-main {
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.join {
+    border-radius: 22px;
+    width: 124px;
+    height: 32px;
+}
+
+.join:hover {
+    background-color: #f39c05;
+}
