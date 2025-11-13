@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <title>Campos Chamber of Commerce Home</title>
+    <meta name="description" content="WDD231 | Web Frontend Development I | Chamber Home Page">
+    <meta name="author" content="Pedro Igor Andrade Neres">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Campos Chamber Home Page">
+    <meta property="og:description" content="The Chamber Home Page for the WDD 231 Course.">
+    <meta property="og:image" content="https://Igor2games.github.io/wdd231/chamber/images/sharing-logo.webp">
+    <meta property="og:url" content="https://igor2games.github.io/wdd231/index.html">
+</head>
+
+<body>
+    <div class="large-header">
+    <header>
+        <img src="images/shop.svg" alt="House Logo" width="500" height="500">
+        <span>Campos Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li class><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    </div>
+    <main>
+        <h1>Home</h1>
+        <div class="menu">
+            <button id="grid"><img src="images/grid.svg" alt="Grid Button" height="20" class="grid-button-img"></button>
+            <button id="list"><img src="images/list.svg" alt="List Button" height="25" class="list-button-img"></button>
+        </div>
+        <article id="cards" class="grid"></article>
+    </main>
+    <footer>
+        <div>
+            <h3>Campos Chamber of Commerce</h3>
+            <p>86 made up street, random 777</p>
+            <p>info@camposcc.org</p>
+            <p>(22) 99955-5555</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin logo"
+                    width="16" height="16"></a>
+            <a href="https://github.com/Igor2games" target="_blank"><img src="images/github.svg" alt="github logo"
+                    width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter X" width="16"
+                    height="16"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p> &copy; <span id="currentyear"></span> Campos Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>    
+    </footer>
+</body>
+
+</html>
