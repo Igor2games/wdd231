@@ -263,6 +263,11 @@ footer p {
     height: 32px;
 }
 
+.join-button{
+    display: flex;
+    justify-content: center;
+}
+
 .join:hover {
     background-color: #f39c05;
 }
