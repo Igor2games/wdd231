@@ -288,3 +288,17 @@ footer p {
     justify-content: center;
     align-items: center;
 }
+
+.events ul {
+    list-style: none;
+    color: white;
+    padding: 0;
+}
+
+.events li {
+    background-color: rgb(79, 109, 137);
+}
+
+.events li:nth-child(even) {
+    background-color: rgb(59, 81, 101);
+}
