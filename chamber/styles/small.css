@@ -286,6 +286,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0 0 0;
 }
 
 .events ul {
@@ -298,6 +299,7 @@ footer p {
 .events li {
     background-color: rgb(79, 109, 137);
     margin: 0;
+    padding: 8px 10px;
 }
 
 .events li:nth-child(even) {
@@ -320,6 +322,7 @@ footer p {
     margin: 10px;
     padding: 2px;
     font-size: larger;
+    padding-bottom: 10px;
 }
 
 .business-grid {
@@ -400,4 +403,8 @@ footer p {
     color: var(--primary-color);
     text-decoration: none;
     display: inline;
+}
+
+.spotlight-website:hover {
+    text-decoration: underline;
 }
