@@ -273,7 +273,6 @@ footer p {
 }
 
 .home-grid1 {
-    background-color: rgb(204, 202, 202);
     margin: 10px;
 }
 
@@ -309,4 +308,8 @@ footer p {
 
 .weather-flex {
     display: flex;
+}
+
+.events, .current-weather, .weather-forecast {
+    background-color: rgb(204, 202, 202);
 }

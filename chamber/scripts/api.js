@@ -14,6 +14,8 @@ const api = 'a02b3deeea15373d2be7d0a012df61e5'
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}&units=metric`;
 
+const url2 = `https://api.openweathermap.org/data/2.5/daily?lat=${lat}&lon=${lon}&appid=${api}&units=metric&cnt=3`;
+
 async function apiFetch() {
     try {
         const response = await fetch(url);
