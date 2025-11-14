@@ -313,3 +313,9 @@ footer p {
 .events, .current-weather, .weather-forecast {
     background-color: rgb(204, 202, 202);
 }
+
+.weather-forecast p{
+    margin: 10px;
+    padding: 2px;
+    font-size: larger;
+}
