@@ -302,3 +302,11 @@ footer p {
 .events li:nth-child(even) {
     background-color: rgb(59, 81, 101);
 }
+
+.home-main h1 {
+    margin: 10px;
+}
+
+.weather-flex {
+    display: flex;
+}

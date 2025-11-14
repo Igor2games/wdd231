@@ -11,6 +11,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    <script src="scripts/api.js" defer></script>
     <title>Campos Chamber of Commerce Home</title>
     <meta name="description" content="WDD231 | Web Frontend Development I | Chamber Home Page">
     <meta name="author" content="Pedro Igor Andrade Neres">
@@ -56,13 +57,20 @@
             </div>
             <div class="current-weather">
                 <h2>Current Weather</h2>
-                <p id="temp"></p>
-                <p id="weather"></p>
-                <p id="high"></p>
-                <p id="low"></p>
-                <p id="humidity"></p>
-                <p id="sunrise"></p>
-                <p id="sunset"></p>
+                <div class="weather-flex">
+                    <div class="weather-img">
+                        <img id="weather-icon" width="100">
+                    </div>
+                    <div class="weather-information">   
+                        <p id="temp"></p>
+                        <p id="weather"></p>
+                        <p id="high"></p>
+                        <p id="low"></p>
+                        <p id="humidity"></p>
+                        <p id="sunrise"></p>
+                        <p id="sunset"></p>
+                    </div>
+                </div> 
             </div>
             <div class="weather-forecast">
                 <h2>Weather Forecast</h2>
