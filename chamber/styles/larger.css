@@ -156,4 +156,14 @@
             text-decoration: none;
             display: inline;
         }
+
+    .home-grid1 {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .home-grid1 h2 {
+        margin: 0;
+    }
 }
