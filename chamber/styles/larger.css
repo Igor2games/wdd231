@@ -166,4 +166,8 @@
     .home-grid1 h2 {
         margin: 0;
     }
+
+    .spotlight-level {
+        color: black;
+    }
 }
