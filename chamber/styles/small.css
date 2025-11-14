@@ -292,10 +292,12 @@ footer p {
     list-style: none;
     color: white;
     padding: 0;
+    margin: 0;
 }
 
 .events li {
     background-color: rgb(79, 109, 137);
+    margin: 0;
 }
 
 .events li:nth-child(even) {
@@ -318,4 +320,84 @@ footer p {
     margin: 10px;
     padding: 2px;
     font-size: larger;
+}
+
+.business-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 20px 10px;
+    align-items: start;
+}
+
+.spotlight-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 110px;
+    gap: 0;
+}
+
+.spotlight-logo {
+    flex: 0 0 120px;
+    width: 120px;
+    height: 100%;
+    object-fit: contain;
+    background: #f5f5f5;
+    padding: 12px;
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+}
+
+.spotlight-info {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    color: var(--secondary-color);
+    overflow: visible;
+}
+
+.spotlight-name {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    white-space: normal;
+    word-break: break-word;
+}
+
+.spotlight-level {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: #fff;
+    background: linear-gradient(180deg, #f7b500, #f39c05);
+    width: fit-content;
+}
+
+.spotlight-address,
+.spotlight-phone,
+.spotlight-website {
+    font-size: 0.85rem;
+    color: #333;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.spotlight-website a,
+.spotlight-phone a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: inline;
 }
