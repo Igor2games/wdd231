@@ -380,7 +380,7 @@ footer p {
     font-size: 0.75rem;
     padding: 4px 8px;
     border-radius: 12px;
-    color: #fff;
+    color: black;
     background: linear-gradient(180deg, #f7b500, #f39c05);
     width: fit-content;
 }
