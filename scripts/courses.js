@@ -78,6 +78,10 @@ const courses = [
     }
 ]
 
+const courseDetails = document.querySelector('#course-details');
+const grid = document.querySelector('.course-grid');
+
+
 document.querySelectorAll('a.prevent').forEach(a =>
     a.addEventListener('click', e => e.preventDefault())
 );
@@ -122,9 +126,12 @@ function createCourseCard(courses) {
         const card = document.createElement("div");
         card.className = "course-card";
 
-        const title = document.createElement("h3");
+        const title = document.createElement("button");
         title.className = "title";
+        title.type = 'button'
         title.textContent = `✓ ${course.subject} ${course.number}`; // always include leading glyph
+        title.addEventListener('click', () => displayCourseDetails(course));
+
         card.appendChild(title);
 
         if (course.completed) {
@@ -157,4 +164,57 @@ function CreateCourseCredits(courses) {
         card.appendChild(creditCard);
        
         container.appendChild(card)
+}
+
+function displayCourseDetails(course) {
+    // Build inner HTML for dialog
+    courseDetails.innerHTML = `
+    <button id="closeModal" aria-label="Close">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${escapeHtml(course.title)}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${escapeHtml(course.certificate)}</p>
+    <p>${escapeHtml(course.description)}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+
+    // Show as modal (browser <dialog> API)
+   
+        courseDetails.showModal();
+   
+    // Close button handler
+    const closeBtn = courseDetails.querySelector('#closeModal');
+    closeBtn.addEventListener('click', () => {
+        if (typeof courseDetails.close === 'function') courseDetails.close();
+        else courseDetails.classList.remove('open');
+    });
+
+    // Close when clicking on the backdrop: listen for cancel or click outside
+    // The 'cancel' event fires when user presses Esc in many browsers
+    const onCancel = (ev) => {
+        // Remove listeners to avoid duplicates
+        courseDetails.removeEventListener('cancel', onCancel);
+        if (typeof courseDetails.close === 'function') courseDetails.close();
+        else courseDetails.classList.remove('open');
+    };
+    courseDetails.addEventListener('cancel', onCancel);
+
+    // Click outside to close (works as fallback): if click target is the dialog itself (backdrop)
+    const onClick = (ev) => {
+        if (ev.target === courseDetails) {
+            if (typeof courseDetails.close === 'function') courseDetails.close();
+            else courseDetails.classList.remove('open');
+            courseDetails.removeEventListener('click', onClick);
+        }
+    };
+    courseDetails.addEventListener('click', onClick);
+}
+
+function escapeHtml(str) {
+    return String(str)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
 }

@@ -127,25 +127,27 @@ h2 {
     column-gap: 10px;
 }
 
-.course-grid h3 {
+.course-grid button {
     background-color: var(--secondary-color);
     color: white;
     padding: 10px;
     border-radius: 12px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-.course-card h3::first-letter {
+.course-card button::first-letter {
     color: transparent;
     font-weight: 700;
     -webkit-text-fill-color: transparent;
 }
 
-.course-card.completed h3::first-letter {
+.course-card.completed button::first-letter {
     color: currentColor;
     -webkit-text-fill-color: initial;
 }
 
-.course-card.completed h3 {
+.course-card.completed button {
     background-color: #f39c05;
     color: #000;
 }
@@ -221,4 +223,32 @@ footer {
 
 .social a:hover {
     background-color: #f39c05;
+}
+
+/* Dialog styles */
+dialog#course-details {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 1.25rem;
+    width: 90%;
+    max-width: 640px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+/* Backdrop */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Close button inside dialog */
+dialog#course-details button#closeModal {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
 }
