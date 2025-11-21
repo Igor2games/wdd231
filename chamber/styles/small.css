@@ -627,7 +627,6 @@ dialog[open] .modal-content {
     cursor: pointer;
     z-index: 10002;
     color: inherit;
-    width: 44px;
 }
 
 /* safety: ensure no ancestor applies opacity/filter that could affect dialog */
