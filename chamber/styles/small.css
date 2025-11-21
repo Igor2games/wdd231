@@ -428,3 +428,250 @@ dialog button {
     padding: .5rem 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
 }
+
+/*Join**/
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1rem
+}
+
+/* Accessibility helper */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    border: 0;
+    padding: 0;
+    margin: -1px;
+}
+
+/* Headings */
+h1 {
+    font-size: 1.5rem;
+    margin: .5rem 0 1rem 0
+}
+
+/* Form */
+form fieldset {
+    border: 1px solid #e6e6e6;
+    padding: 1rem;
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, #ffffff, #fbfbfb);
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    margin-bottom: .8rem;
+}
+
+.label-text {
+    font-weight: 600
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: var(--text);
+}
+
+input[type="submit"] {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: .7rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+    outline: 3px solid rgba(42, 111, 151, 0.14);
+}
+
+/* Layout: form above cards on small screens */
+.form-and-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    margin-bottom: 1rem
+}
+
+.membership-cards {
+    margin-top: 1rem
+}
+
+.cards-inner {
+    display: grid;
+    gap: .75rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    animation: cards-in 700ms ease both;
+    animation-delay: 150ms;
+}
+
+/* Cards */
+.card {
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: none;
+}
+
+.card h3 {
+    margin: .2rem 0 .4rem 0
+}
+
+.card p {
+    margin: 0 0 .6rem 0
+}
+
+.card a {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline
+}
+
+/* Level accents */
+.card-np {
+    border-left: 4px solid #6bbf8e
+}
+
+.card-bronze {
+    border-left: 4px solid #b87333
+}
+
+.card-silver {
+    border-left: 4px solid #c0c0c0
+}
+
+.card-gold {
+    border-left: 4px solid #ffd700
+}
+
+/* hide dialogs unless explicitly opened */
+dialog {
+    display: none;
+    border: none;
+    padding: 0;
+    background: transparent;
+}
+
+/* visible dialog - center and fix in viewport */
+dialog[open] {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+/* native backdrop will darken everything behind the dialog */
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.48);
+    transition: background 180ms ease;
+}
+
+/* dialog box itself: fully opaque, own stacking context */
+dialog .modal-content {
+    position: relative;
+    z-index: 10001;
+    /* ensure it's above the backdrop */
+    width: clamp(280px, 90%, 720px);
+    margin: 0 1rem;
+    background: #ffffff;
+    /* fully opaque solid color */
+    color: var(--text, #222);
+    padding: 1.1rem;
+    border-radius: 10px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+    transform: translateY(6px);
+    transition: transform 200ms ease;
+    opacity: 1;
+    /* never animate opacity of the box */
+    will-change: transform;
+}
+
+/* entrance motion */
+dialog[open] .modal-content {
+    transform: translateY(0);
+}
+
+/* close button lives inside the modal-content */
+.modal-content .close-modal {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    z-index: 10002;
+    color: inherit;
+    width: 44px;
+}
+
+/* safety: ensure no ancestor applies opacity/filter that could affect dialog */
+body,
+main,
+.container {
+    /* only if you have such selectors */
+    opacity: 1;
+    filter: none;
+}
+
+/* small helpers */
+.form-actions {
+    margin-top: .5rem
+}
+
+.summary dl {
+    margin: 0;
+    padding: 0
+}
+
+.summary .row {
+    display: flex;
+    gap: 1rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid #f0f0f0
+}
+
+.summary dt {
+    width: 200px;
+    font-weight: 600
+}
+
+/* entrance animation for cards */
+@keyframes cards-in {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(.98);
+        filter: blur(4px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0)
+    }
+}
