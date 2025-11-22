@@ -415,6 +415,10 @@ dialog {
     box-shadow: 0 0 3rem #777;
     width: 90%;
     max-width: 600px;
+    display: none;
+    border: none;
+    padding: 0;
+    background: transparent;
 }
 
 ::backdrop {
@@ -559,13 +563,6 @@ input[type="submit"]:hover {
 
 .card-gold {
     border-left: 4px solid #ffd700
-}
-
-dialog {
-    display: none;
-    border: none;
-    padding: 0;
-    background: transparent;
 }
 
 dialog[open] {
