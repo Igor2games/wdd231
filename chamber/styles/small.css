@@ -437,7 +437,6 @@ dialog button {
     padding: 0 1rem
 }
 
-/* Accessibility helper */
 .visually-hidden {
     position: absolute !important;
     height: 1px;
@@ -450,13 +449,11 @@ dialog button {
     margin: -1px;
 }
 
-/* Headings */
 h1 {
     font-size: 1.5rem;
     margin: .5rem 0 1rem 0
 }
 
-/* Form */
 form fieldset {
     border: 1px solid #e6e6e6;
     padding: 1rem;
@@ -503,7 +500,6 @@ input[type="submit"]:hover {
     outline: 3px solid rgba(42, 111, 151, 0.14);
 }
 
-/* Layout: form above cards on small screens */
 .form-and-cards {
     display: flex;
     flex-direction: column;
@@ -524,7 +520,6 @@ input[type="submit"]:hover {
     animation-delay: 150ms;
 }
 
-/* Cards */
 .card {
     padding: 1rem;
     border-radius: 8px;
@@ -550,7 +545,6 @@ input[type="submit"]:hover {
     text-decoration: underline
 }
 
-/* Level accents */
 .card-np {
     border-left: 4px solid #6bbf8e
 }
@@ -567,7 +561,6 @@ input[type="submit"]:hover {
     border-left: 4px solid #ffd700
 }
 
-/* hide dialogs unless explicitly opened */
 dialog {
     display: none;
     border: none;
@@ -575,7 +568,6 @@ dialog {
     background: transparent;
 }
 
-/* visible dialog - center and fix in viewport */
 dialog[open] {
     display: flex;
     position: fixed;
@@ -585,21 +577,17 @@ dialog[open] {
     z-index: 10000;
 }
 
-/* native backdrop will darken everything behind the dialog */
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.48);
     transition: background 180ms ease;
 }
 
-/* dialog box itself: fully opaque, own stacking context */
 dialog .modal-content {
     position: relative;
     z-index: 10001;
-    /* ensure it's above the backdrop */
     width: clamp(280px, 90%, 720px);
     margin: 0 1rem;
     background: #ffffff;
-    /* fully opaque solid color */
     color: var(--text, #222);
     padding: 1.1rem;
     border-radius: 10px;
@@ -607,16 +595,13 @@ dialog .modal-content {
     transform: translateY(6px);
     transition: transform 200ms ease;
     opacity: 1;
-    /* never animate opacity of the box */
     will-change: transform;
 }
 
-/* entrance motion */
 dialog[open] .modal-content {
     transform: translateY(0);
 }
 
-/* close button lives inside the modal-content */
 .modal-content .close-modal {
     position: absolute;
     top: 8px;
@@ -629,16 +614,13 @@ dialog[open] .modal-content {
     color: inherit;
 }
 
-/* safety: ensure no ancestor applies opacity/filter that could affect dialog */
 body,
 main,
 .container {
-    /* only if you have such selectors */
     opacity: 1;
     filter: none;
 }
 
-/* small helpers */
 .form-actions {
     margin-top: .5rem
 }
@@ -660,7 +642,6 @@ main,
     font-weight: 600
 }
 
-/* entrance animation for cards */
 @keyframes cards-in {
     from {
         opacity: 0;
@@ -674,3 +655,4 @@ main,
         filter: blur(0)
     }
 }
+

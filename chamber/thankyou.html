@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Thank you — Campos Chamber</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/thankyou.js" defer></script>
+    <meta name="description" content="Thank you — Campos Chamber membership confirmation">
+</head>
+<body>
+    <div class="large-header">
+        <header>
+            <img src="images/shop.svg" alt="House Logo" width="500" height="500">
+            <span>Campos Chamber of Commerce</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </header>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="container" id="main">
+        <h1>Thank you for your application</h1>
+        <p>We appreciate you joining the Campos Chamber. Below is the information you submitted for required fields.</p>
+
+        <section class="summary" aria-live="polite">
+            <dl>
+                <div class="row">
+                    <dt>First name</dt>
+                    <dd id="firstName">—</dd>
+                </div>
+                <div class="row">
+                    <dt>Last name</dt>
+                    <dd id="lastName">—</dd>
+                </div>
+                <div class="row">
+                    <dt>Email</dt>
+                    <dd id="emailAddress">—</dd>
+                </div>
+                <div class="row">
+                    <dt>Mobile</dt>
+                    <dd id="mobileNumber">—</dd>
+                </div>
+                <div class="row">
+                    <dt>Business / Organization</dt>
+                    <dd id="businessName">—</dd>
+                </div>
+                <div class="row">
+                    <dt>Form timestamp</dt>
+                    <dd id="ts">—</dd>
+                </div>
+            </dl>
+
+            <p>If any information looks incorrect, please return to the application form and resubmit.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Campos Chamber of Commerce</h3>
+            <p>86 made up street, random 777</p>
+            <p>info@camposcc.org</p>
+            <p>(22) 99955-5555</p>
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin logo"
+                    width="16" height="16"></a>
+            <a href="https://github.com/Igor2games" target="_blank"><img src="images/github.svg" alt="github logo"
+                    width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter X" width="16"
+                    height="16"></a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p> &copy; <span id="currentyear"></span> Campos Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

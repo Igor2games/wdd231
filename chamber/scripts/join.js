@@ -1,25 +1,21 @@
+
 document.addEventListener('DOMContentLoaded', function () {
-    // Open modal links (each link should have data-modal="modal-id")
     document.querySelectorAll('.open-modal').forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             const id = this.dataset.modal;
             const dlg = document.getElementById(id);
             if (!dlg) return;
-            // ensure the dialog element itself is *not* wrapping other page content
             if (typeof dlg.showModal === 'function') {
-                dlg.showModal();
+                try { dlg.showModal(); } catch (err) { dlg.setAttribute('open', ''); }
             } else {
-                // fallback: set open attribute (CSS above handles display)
                 dlg.setAttribute('open', '');
             }
-            // move focus to the close button for accessibility
             const close = dlg.querySelector('.close-modal');
             if (close) close.focus();
         });
     });
 
-    // Close handlers
     document.addEventListener('click', function (e) {
         if (e.target.matches('.close-modal')) {
             const dlg = e.target.closest('dialog');
@@ -29,20 +25,63 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Close when clicking outside the modal-content (works with showModal and fallback)
     document.querySelectorAll('dialog').forEach(dlg => {
         dlg.addEventListener('click', function (e) {
             const rect = dlg.getBoundingClientRect();
-            // click outside the centered box
             if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) {
                 if (typeof dlg.close === 'function') dlg.close();
                 else dlg.removeAttribute('open');
             }
         });
-
-        // Esc key (native cancel closes dialog when using showModal)
-        dlg.addEventListener('cancel', function (ev) {
-            // allow native close, no extra action needed
+        dlg.addEventListener('cancel', function () { });
+    });
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                const link = card.querySelector('.open-modal');
+                if (link) {
+                    e.preventDefault();
+                    link.click();
+                }
+            }
         });
     });
+    (function () {
+        const hidden = document.getElementById('timestamp');
+        if (!hidden) {
+            console.warn('Timestamp input not found: #timestamp');
+            return;
+        }
+
+        function pad(n) { return String(n).padStart(2, '0'); }
+        function formatNoMs(dt) {
+            return [
+                dt.getFullYear(),
+                pad(dt.getMonth() + 1),
+                pad(dt.getDate())
+            ].join('-') + ' ' + [
+                pad(dt.getHours()),
+                pad(dt.getMinutes()),
+                pad(dt.getSeconds())
+            ].join(':');
+        }
+
+        function setTimestamp() {
+            hidden.value = formatNoMs(new Date());
+        }
+
+        setTimestamp();
+
+        const refreshId = setInterval(setTimestamp, 30000);
+
+        const form = document.getElementById('joinForm');
+        if (form) {
+            form.addEventListener('submit', function () {
+                setTimestamp();
+                clearInterval(refreshId);
+            });
+        } else {
+            console.warn('Join form not found: #joinForm');
+        }
+    })();
 });
