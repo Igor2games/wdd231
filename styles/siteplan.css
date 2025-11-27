@@ -1,0 +1,51 @@
+:root {
+    --primary-color: rgb(63, 63, 65);
+    --secondary-color: rgb(46, 186, 207);
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0 100px;
+}
+
+img {
+    width: 30%;
+}
+
+div {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    border: 3px solid black;
+    margin-bottom: 30px;
+}
+
+h1, h2, h3, h4, h5 {
+    background-color: var(--secondary-color);
+    border: 3px solid black;
+}
+
+p {
+    color: white;
+}
+
+
+.p {
+    background-color: var(--primary-color);
+}
+
+.schema p {
+    border: 3px solid black;
+    padding-top: 9px;
+}
+
+.desktop {
+    width: 70%;
+}
