@@ -4,23 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campos Chamber Discover | Campos dos Goytacazes</title>
+    <meta name="description" content="Discover top attractions, restaurants, and parks in Campos dos Goytacazes.">
+    <meta name="author" content="Pedro Igor Andrade Neres">
+    <link rel="canonical" href="https://igor2games.github.io/wdd231/chamber/discover.html">
+    <meta name="theme-color" content="#0a6f8a">
+    <meta name="robots" content="index, follow">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
     <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <meta property="og:title" content="Discover Campos dos Goytacazes">
+    <meta property="og:description" content="Explore 8 local attractions curated by the Campos Chamber.">
+    <meta property="og:image" content="https://igor2games.github.io/wdd231/chamber/images/sharing-logo.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://igor2games.github.io/wdd231/chamber/discover.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@yourhandle">
+
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/discover.js" defer></script>
-    <title>Campos Chamber of Commerce Join</title>
-    <meta name="description" content="WDD231 | Web Frontend Development I | Chamber Join Page">
-    <meta name="author" content="Pedro Igor Andrade Neres">
+    <script type="module" src="scripts/discover.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <meta property="og:title" content="Campos Chamber Join and Application Page for any aspiring businesses">
-    <meta property="og:description" content="The Chamber Join Application Page for the WDD 231 Course.">
-    <meta property="og:image" content="https://Igor2games.github.io/wdd231/chamber/images/sharing-logo.webp">
-    <meta property="og:url" content="https://igor2games.github.io/wdd231/index.html">
 </head>
 
 <body>
@@ -41,30 +54,19 @@
     </div>
 
     <!-- discover.html (main content only, excluding header and footer) -->
-    <main id="main-content" aria-label="Campos dos Goytacazes Points of Interest">
-        <section class="visit-message" aria-live="polite"></section>
-        <section class="cards-grid" aria-label="Attractions Grid">
-            <!-- Cards will be dynamically injected here by JavaScript -->
-            <noscript>
-                <div class="noscript-fallback">
-                    <p>
-                        <strong>JavaScript is disabled.</strong> Please enable JavaScript to view the interactive
-                        attractions grid. Here are some highlights of Campos dos Goytacazes:
-                    </p>
-                    <ul>
-                        <li>Morro do Itaóca</li>
-                        <li>Praia do Farol de São Thomé</li>
-                        <li>Lagoa de Cima</li>
-                        <li>Casa de Cultura Villa Maria</li>
-                        <li>Teatro Municipal Trianon</li>
-                        <li>Praça do Santíssimo Salvador</li>
-                        <li>Museu Histórico de Campos</li>
-                        <li>Palácio Nilo Peçanha</li>
-                    </ul>
-                </div>
-            </noscript>
+    <main id="discover-main">
+        <section id="visit-message" class="visit-message" aria-live="polite"></section>
+    
+        <div class="menu" role="toolbar" aria-label="View options">
+            <button id="list-view" class="menu-btn" aria-pressed="false">List</button>
+            <button id="grid-view" class="menu-btn" aria-pressed="true">Grid</button>
+        </div>
+    
+        <section id="discover-grid" class="discover-grid" aria-label="Local attractions">
+            <!-- Cards injected by scripts/discover.js -->
         </section>
     </main>
+
     <script type="module" src="discover.js"></script>
 
     <footer>
