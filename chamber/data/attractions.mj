@@ -1,0 +1,51 @@
+// attractions.mjs: Export array of Campos dos Goytacazes attractions
+export const attractions = [
+  {
+    name: "Morro do Itaóca",
+    address: "Rua Ibitioca, Campos dos Goytacazes, RJ",
+    description: "A 414-meter hill offering panoramic views of Campos, popular for hiking, mountain biking, and paragliding. The summit is accessible by car or trail, with breathtaking vistas of the city and Lagoa de Cima.",
+    image: "morro-itaoca.webp"
+  },
+  {
+    name: "Praia do Farol de São Thomé",
+    address: "Av. Atlântica, Farol de São Thomé, Campos dos Goytacazes, RJ",
+    description: "Campos' only ocean beach, known for its wide sandy shore, strong waves, and the iconic Eiffel-designed lighthouse. A favorite for surfing, fishing, and summer festivals.",
+    image: "praia-farol.webp"
+  },
+  {
+    name: "Lagoa de Cima",
+    address: "Estrada Lagoa de Cima, Campos dos Goytacazes, RJ",
+    description: "A tranquil freshwater lagoon surrounded by lush nature, perfect for swimming, kayaking, and picnics. Local bars and the Yacht Club offer a relaxing escape from the city.",
+    image: "lagoa-cima.webp"
+  },
+  {
+    name: "Casa de Cultura Villa Maria",
+    address: "Rua Barão de Miracema, 130, Centro, Campos dos Goytacazes, RJ",
+    description: "A historic mansion and cultural hub hosting exhibitions, concerts, and community events. Its beautiful gardens and eclectic architecture make it a must-visit for art lovers.",
+    image: "villa-maria.webp"
+  },
+  {
+    name: "Teatro Municipal Trianon",
+    address: "Av. Alberto Torres, 397, Centro, Campos dos Goytacazes, RJ",
+    description: "The city's premier theater, featuring a grand auditorium and diverse programming in music, dance, and drama. A landmark of Campos' cultural scene since 1998.",
+    image: "teatro-trianon.webp"
+  },
+  {
+    name: "Praça do Santíssimo Salvador",
+    address: "Praça do Santíssimo Salvador, Centro, Campos dos Goytacazes, RJ",
+    description: "The historic heart of Campos, this 19th-century square is surrounded by palaces, the cathedral, and the Belgian Fountain. A lively gathering place for locals and visitors.",
+    image: "praca-salvador.webp"
+  },
+  {
+    name: "Museu Histórico de Campos",
+    address: "Praça Barão de Araruama, 2, Centro, Campos dos Goytacazes, RJ",
+    description: "Located in a restored 19th-century mansion, the museum showcases Campos' rich history through artifacts, photographs, and period rooms. Admission is free.",
+    image: "museu-campos.webp"
+  },
+  {
+    name: "Palácio Nilo Peçanha",
+    address: "Praça São Salvador, Centro, Campos dos Goytacazes, RJ",
+    description: "An imposing neoclassical building inspired by the Parthenon, formerly the city’s courthouse and now home to the municipal legislature. Its architecture is a testament to Campos' grandeur.",
+    image: "palacio-nilo-pecanha.webp"
+  }
+];
