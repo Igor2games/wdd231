@@ -4,8 +4,6 @@ import { attractions } from '../data/attractions.mjs';
 
 const GRID_SELECTOR = '#discover-grid';
 const VISIT_SELECTOR = '#visit-message';
-const LIST_BTN_ID = 'list-view';
-const GRID_BTN_ID = 'grid-view';
 const STORAGE_KEY = 'chamber_lastVisit';
 
 function formatVisitMessage(lastTimestamp) {
@@ -71,27 +69,8 @@ function renderGrid(items) {
     items.forEach(item => container.appendChild(createCard(item)));
 }
 
-function setupViewToggle() {
-    const listBtn = document.getElementById(LIST_BTN_ID);
-    const gridBtn = document.getElementById(GRID_BTN_ID);
-    const container = document.querySelector(GRID_SELECTOR);
-    if (!listBtn || !gridBtn || !container) return;
-
-    listBtn.addEventListener('click', () => {
-        container.style.gridTemplateColumns = '1fr';
-        listBtn.setAttribute('aria-pressed', 'true');
-        gridBtn.setAttribute('aria-pressed', 'false');
-    });
-
-    gridBtn.addEventListener('click', () => {
-        container.style.removeProperty('grid-template-columns');
-        listBtn.setAttribute('aria-pressed', 'false');
-        gridBtn.setAttribute('aria-pressed', 'true');
-    });
-}
 
 document.addEventListener('DOMContentLoaded', () => {
     updateVisitMessage();
     renderGrid(attractions);
-    setupViewToggle();
 });
