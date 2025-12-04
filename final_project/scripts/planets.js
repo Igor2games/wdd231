@@ -36,10 +36,10 @@ async function fetchNasaPlanetImage(planetName) {
 async function displayPlanetsWithNasaImages(planets) {
     planetsContainer.innerHTML = '';
 
-    // Fetch images in parallel for better performance
     const planetsWithImages = await Promise.all(
         planets.map(async (planet) => {
-            const imageUrl = (await fetchNasaPlanetImage(planet.name)) || 'images/placeholder.webp';
+            const nasaImage = await fetchNasaPlanetImage(planet.name);
+            const imageUrl = nasaImage || planet.image || 'images/placeholder.webp';
             return { ...planet, imageUrl };
         })
     );
@@ -62,7 +62,6 @@ async function displayPlanetsWithNasaImages(planets) {
 
         planetsContainer.appendChild(planetCard);
 
-        // Add event listeners for modal open
         planetCard.addEventListener('click', () => openModal(planet));
         planetCard.addEventListener('keydown', e => {
             if (e.key === 'Enter' || e.key === ' ') {
