@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New Frontier | Planets</title>
+    <meta name="description" content="Explore potential habitable planets with New Frontier." />
+    <meta name="author" content="Pedro Igor Andrade Neres" />
+    <meta name="theme-color" content="#0a6f8a" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <meta property="og:title" content="New Frontier - Planets" />
+    <meta property="og:description" content="Explore potential habitable planets with New Frontier." />
+    <meta property="og:image" content="images/sharing-logo.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://igor2games.github.io/wdd231/finalproject/planets.html" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@yourhandle" />
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script type="module" src="scripts/planets.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav" role="navigation" aria-label="Primary Navigation">
+            <a href="index.html" class="logo" aria-label="New Frontier Home">New Frontier</a>
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle menu">
+                &#9776;
+            </button>
+            <ul id="primary-menu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="planets.html" aria-current="page">Planets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="planets-list">
+            <h1>Potential Habitable Planets</h1>
+            <div id="planets-container" aria-live="polite" class="planets-grid">
+                <!-- Planet cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <dialog id="planet-modal" aria-modal="true" role="dialog" aria-labelledby="modal-title"
+            aria-describedby="modal-description">
+            <button id="close-modal" aria-label="Close details">×</button>
+            <h2 id="modal-title">Planet Details</h2>
+            <div id="modal-description">
+                <!-- Planet details will be dynamically inserted here -->
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://twitter.com/newfrontier" target="_blank" rel="noopener" aria-label="Twitter">
+                <img src="images/twitter.webp" alt="Twitter logo" loading="lazy" />
+            </a>
+            <a href="https://facebook.com/newfrontier" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="images/facebook.webp" alt="Facebook logo" loading="lazy" />
+            </a>
+            <a href="https://instagram.com/newfrontier" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="images/instagram.webp" alt="Instagram logo" loading="lazy" />
+            </a>
+        </div>
+        <p>&copy; 2110 New Frontier. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

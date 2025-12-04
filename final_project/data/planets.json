@@ -1,0 +1,137 @@
+[
+    {
+        "id": "planet1",
+        "name": "Kepler-452b",
+        "distance": "1400",
+        "atmosphere": "Nitrogen, Oxygen",
+        "habitability": "8.5",
+        "image": "images/kepler-452b.webp",
+        "description": "A super-Earth exoplanet orbiting within the habitable zone of a sun-like star."
+    },
+    {
+        "id": "planet2",
+        "name": "Proxima Centauri b",
+        "distance": "4.24",
+        "atmosphere": "Unknown",
+        "habitability": "7.0",
+        "image": "images/proxima-centauri-b.webp",
+        "description": "Closest known exoplanet to the Solar System, orbiting the red dwarf Proxima Centauri."
+    },
+    {
+        "id": "planet3",
+        "name": "TRAPPIST-1e",
+        "distance": "39.6",
+        "atmosphere": "Possibly Oxygen-rich",
+        "habitability": "9.0",
+        "image": "images/trappist-1e.webp",
+        "description": "One of seven Earth-sized planets orbiting the ultra-cool dwarf star TRAPPIST-1."
+    },
+    {
+        "id": "planet4",
+        "name": "LHS 1140 b",
+        "distance": "40",
+        "atmosphere": "Unknown",
+        "habitability": "8.0",
+        "image": "images/lhs-1140-b.webp",
+        "description": "A rocky super-Earth orbiting within the habitable zone of a red dwarf star."
+    },
+    {
+        "id": "planet5",
+        "name": "Gliese 667 Cc",
+        "distance": "23.62",
+        "atmosphere": "Unknown",
+        "habitability": "7.5",
+        "image": "images/gliese-667-cc.webp",
+        "description": "A super-Earth exoplanet orbiting in the habitable zone of the Gliese 667 C star."
+    },
+    {
+        "id": "planet6",
+        "name": "Wolf 1061c",
+        "distance": "13.8",
+        "atmosphere": "Unknown",
+        "habitability": "7.2",
+        "image": "images/wolf-1061c.webp",
+        "description": "A potentially habitable exoplanet orbiting the red dwarf Wolf 1061."
+    },
+    {
+        "id": "planet7",
+        "name": "Ross 128 b",
+        "distance": "11",
+        "atmosphere": "Unknown",
+        "habitability": "7.8",
+        "image": "images/ross-128-b.webp",
+        "description": "A temperate exoplanet orbiting the red dwarf Ross 128."
+    },
+    {
+        "id": "planet8",
+        "name": "Kepler-22b",
+        "distance": "600",
+        "atmosphere": "Unknown",
+        "habitability": "7.9",
+        "image": "images/kepler-22b.webp",
+        "description": "The first confirmed planet found in the habitable zone of a sun-like star."
+    },
+    {
+        "id": "planet9",
+        "name": "Kepler-62f",
+        "distance": "1200",
+        "atmosphere": "Unknown",
+        "habitability": "8.1",
+        "image": "images/kepler-62f.webp",
+        "description": "A super-Earth exoplanet in the habitable zone of the star Kepler-62."
+    },
+    {
+        "id": "planet10",
+        "name": "Kepler-186f",
+        "distance": "500",
+        "atmosphere": "Unknown",
+        "habitability": "8.3",
+        "image": "images/kepler-186f.webp",
+        "description": "The first Earth-size planet discovered in the habitable zone of another star."
+    },
+    {
+        "id": "planet11",
+        "name": "Tau Ceti e",
+        "distance": "12",
+        "atmosphere": "Unknown",
+        "habitability": "7.6",
+        "image": "images/tau-ceti-e.webp",
+        "description": "A super-Earth orbiting the star Tau Ceti, relatively close to Earth."
+    },
+    {
+        "id": "planet12",
+        "name": "Kapteyn b",
+        "distance": "13",
+        "atmosphere": "Unknown",
+        "habitability": "7.4",
+        "image": "images/kapteyn-b.webp",
+        "description": "An old super-Earth orbiting the star Kapteyn's Star."
+    },
+    {
+        "id": "planet13",
+        "name": "Gliese 581g",
+        "distance": "20",
+        "atmosphere": "Unknown",
+        "habitability": "7.7",
+        "image": "images/gliese-581g.webp",
+        "description": "A controversial potentially habitable exoplanet orbiting Gliese 581."
+    },
+    {
+        "id": "planet14",
+        "name": "HD 40307 g",
+        "distance": "42",
+        "atmosphere": "Unknown",
+        "habitability": "7.3",
+        "image": "images/hd-40307-g.webp",
+        "description": "A super-Earth orbiting within the habitable zone of HD 40307."
+    },
+    {
+        "id": "planet15",
+        "name": "Kepler-440b",
+        "distance": "470",
+        "atmosphere": "Unknown",
+        "habitability": "8.0",
+        "image": "images/kepler-440b.webp",
+        "description": "A super-Earth exoplanet in the habitable zone of its star."
+    }
+]

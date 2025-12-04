@@ -1,0 +1,178 @@
+/* Base styles for mobile-first */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #0a6f8a;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #0a6f8a;
+    color: white;
+    padding: 1rem;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+}
+
+.nav-menu li {
+    margin: 0.5rem 0;
+}
+
+.nav-menu a {
+    color: white;
+    font-weight: 600;
+}
+
+.hero {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, #0a6f8a 0%, #3a9dbf 100%);
+    color: white;
+}
+
+.join-form {
+    padding: 1rem;
+    background: white;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.join-form h2 {
+    margin-top: 0;
+}
+
+.join-form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+}
+
+.join-form input,
+.join-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.join-form button {
+    margin-top: 1rem;
+    background-color: #0a6f8a;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.join-form button:hover,
+.join-form button:focus {
+    background-color: #095a6b;
+}
+
+footer {
+    background-color: #0a6f8a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-links {
+    margin-bottom: 0.5rem;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+/* Planets grid for planets page */
+.planets-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Modal styles */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 600px;
+    width: 90%;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#close-modal {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+    color: #0a6f8a;
+}
+
+/* Gallery grid for about page */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}

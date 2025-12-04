@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New Frontier | About Us</title>
+    <meta name="description" content="Learn about New Frontier's mission and history in exploring habitable planets." />
+    <meta name="author" content="Pedro Igor Andrade Neres" />
+    <meta name="theme-color" content="#0a6f8a" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+    <meta property="og:title" content="New Frontier - About Us" />
+    <meta property="og:description" content="Discover the story and mission behind New Frontier." />
+    <meta property="og:image" content="images/sharing-logo.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://igor2games.github.io/wdd231/finalproject/about.html" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@yourhandle" />
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script type="module" src="scripts/about.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav" role="navigation" aria-label="Primary Navigation">
+            <a href="index.html" class="logo" aria-label="New Frontier Home">New Frontier</a>
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle menu">
+                &#9776;
+            </button>
+            <ul id="primary-menu" class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About Us</a></li>
+                <li><a href="planets.html">Planets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <h1>About New Frontier</h1>
+            <p>On a dying Earth, New Frontier leads the search for habitable planets to secure humanity’s future.</p>
+        </section>
+
+        <section class="company-history">
+            <h2>Our History</h2>
+            <p>
+                Founded in 2075, New Frontier emerged from a coalition of scientists, engineers, and visionaries
+                determined to find a new home for humanity. Over the decades, we have pioneered advanced space
+                exploration technologies and built a dedicated team committed to this mission.
+            </p>
+        </section>
+
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                To explore, identify, and prepare habitable planets beyond our solar system, ensuring the survival and
+                prosperity of future generations.
+            </p>
+        </section>
+
+        <section class="milestones">
+            <h2>Milestones</h2>
+            <ul>
+                <li><strong>2075:</strong> New Frontier founded.</li>
+                <li><strong>2080:</strong> First deep space probe launched.</li>
+                <li><strong>2090:</strong> Discovery of first potentially habitable exoplanet.</li>
+                <li><strong>2100:</strong> Development of advanced terraforming technologies.</li>
+                <li><strong>2110:</strong> Launch of manned exploratory missions.</li>
+            </ul>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/mission-control.webp" alt="Mission control center" loading="lazy" />
+                <img src="images/space-probe.webp" alt="Space probe in orbit" loading="lazy" />
+                <img src="images/terraforming.webp" alt="Terraforming simulation" loading="lazy" />
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://twitter.com/newfrontier" target="_blank" rel="noopener" aria-label="Twitter">
+                <img src="images/twitter.webp" alt="Twitter logo" loading="lazy" />
+            </a>
+            <a href="https://facebook.com/newfrontier" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="images/facebook.webp" alt="Facebook logo" loading="lazy" />
+            </a>
+            <a href="https://instagram.com/newfrontier" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="images/instagram.webp" alt="Instagram logo" loading="lazy" />
+            </a>
+        </div>
+        <p>&copy; 2110 New Frontier. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
