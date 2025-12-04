@@ -491,3 +491,24 @@ body.dark-mode dialog#planet-modal button#close-modal:hover {
     background-color: #095a6b;
     border-radius: 0.45rem;
 }
+
+.video-link {
+    color: white;
+    text-align: left;
+    justify-self: left;
+}
+
+a.current {
+    color: orange
+}
+
+body.dark-mode a.current {
+    color: orange;
+}
+
+.wayfinding {
+    text-align: left;
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+}
