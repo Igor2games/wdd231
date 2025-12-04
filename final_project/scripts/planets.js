@@ -1,5 +1,3 @@
-// planets.js - ES module
-
 const planetsContainer = document.getElementById('planets-container');
 const modal = document.getElementById('planet-modal');
 const modalTitle = document.getElementById('modal-title');

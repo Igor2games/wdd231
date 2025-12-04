@@ -1,1 +1,0 @@
-// Placeholder for any About page JS if needed
