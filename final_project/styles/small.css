@@ -151,14 +151,14 @@ footer {
     margin: 0 0.5rem;
     display: inline-block;
     background-color: #095a6b;
-    border-radius: 0.5rem;
+     border-radius: 22px;
 }
 
 .social-links img {
     width: 32px;
     height: 32px;
     vertical-align: middle;
-    border-radius: 0.5rem;
+    border-radius: 22px;
 }
 
 /* Planets grid for planets page */
