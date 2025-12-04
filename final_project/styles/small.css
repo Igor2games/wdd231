@@ -1,4 +1,3 @@
-/* Base styles for mobile-first */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -23,12 +22,6 @@ header {
     background-color: #0a6f8a;
     color: white;
     padding: 1rem;
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .logo {
@@ -299,7 +292,6 @@ dialog[open] {
     padding: 1rem;
     background-color: #0a6f8a;
     flex-wrap: wrap;
-    /* allow wrapping so menu can drop below */
 }
 
 .menu-toggle {
@@ -372,11 +364,8 @@ dialog[open] {
     }
 }
 
-body,
-main,
-section,
-header,
-footer {
+
+section {
     padding-left: .5rem;
     padding-right: .5rem;
     box-sizing: border-box;
@@ -454,4 +443,14 @@ body.dark-mode .menu-toggle {
 body.dark-mode .menu-toggle:hover {
     background-color: rgba(187, 134, 252, 0.2);
     border-radius: 4px;
+}
+
+header,
+footer {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
