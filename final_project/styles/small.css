@@ -150,12 +150,15 @@ footer {
 .social-links a {
     margin: 0 0.5rem;
     display: inline-block;
+    background-color: #095a6b;
+    border-radius: 0.5rem;
 }
 
 .social-links img {
     width: 32px;
     height: 32px;
     vertical-align: middle;
+    border-radius: 0.5rem;
 }
 
 /* Planets grid for planets page */
@@ -483,4 +486,9 @@ body.dark-mode dialog#planet-modal button#close-modal {
 
 body.dark-mode dialog#planet-modal button#close-modal:hover {
     color: #3700b3;
+}
+
+.social-links :hover {
+    background-color: #095a6b;
+    border-radius: 0.45rem;
 }
